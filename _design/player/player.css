@@ -1,0 +1,372 @@
+@-webkit-keyframes css-animation {
+0% { opacity: 1; }
+100% { opacity: 0; }
+}
+
+@keyframes css-animation {
+0% { opacity: 1; }
+100% { opacity: 0; }
+}
+
+@keyframes css-animation1 {
+    to { opacity: 1; }
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url(http://fonts.gstatic.com/s/roboto/v15/0eC6fl06luXEYWpBSJvXCFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+}
+#loading-image {
+-webkit-animation-name: spin;
+-webkit-animation-duration: 1000ms;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-timing-function: linear;
+-moz-animation-name: spin;
+-moz-animation-duration: 1000ms;
+-moz-animation-iteration-count: infinite;
+-moz-animation-timing-function: linear;
+-ms-animation-name: spin;
+-ms-animation-duration: 1000ms;
+-ms-animation-iteration-count: infinite;
+-ms-animation-timing-function: linear;
+animation-name: spin;
+animation-duration: 1000ms;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+
+@-ms-keyframes spin {
+from { -ms-transform: rotate(0deg); }
+to { -ms-transform: rotate(360deg); }
+}
+
+@-moz-keyframes spin {
+from { -moz-transform: rotate(0deg); }
+to { -moz-transform: rotate(360deg); }
+}
+
+@-webkit-keyframes spin {
+from { -webkit-transform: rotate(0deg); }
+to { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+from { transform:rotate(0deg); }
+to { transform:rotate(360deg); }
+}
+
+#banned{
+align: center;
+font: 18px Roboto;
+font-family: Roboto, Tahoma, Arial;
+color: white;
+}
+
+#settings {
+width: auto;
+height: auto;
+padding: 0px;
+margin-top: 0px;
+font-family: Roboto, Tahoma, Arial;
+font-weight: 400;
+font-style: normal;
+font-size: 13px;
+cursor: default;
+color: #0;
+}
+
+#panel {
+opacity: 1;
+display: inline-block;
+vertical-align: middle;
+width: 100%;
+height: 64px;
+background-color: rgba(0, 0, 0, 0.5); 
+margin: 0;
+padding: 0;
+position: absolute;
+bottom: 0;
+left: 0;
+box-sizing: inherit;
+bottom: 0;
+left: 0;
+-webkit-animation: css-animation 500ms ease-in 2s forwards;
+animation: css-animation 500ms ease-in 2s forwards;
+}
+
+body:hover #panel {
+-webkit-animation: css-animation1 500ms ease-in 1s forwards;
+animation: css-animation1 500ms ease-in 1s forwards;
+}
+
+#numbers {
+font: 18px Roboto;
+font-family: Roboto, Tahoma, Arial;
+color: white;
+position: absolute;
+left: 64px;
+top: 8px;
+right: 64px;
+z-index: 1;
+}
+
+#title {
+font: 14px Roboto;
+font-family: Roboto, Tahoma, Arial;
+color: white;
+position: absolute;
+left: 64px;
+bottom: 8px;
+right: 64px;
+z-index: 1;
+}
+
+.menu{
+align: left;
+font: 18px Roboto;
+font-family: Roboto, Tahoma, Arial;
+color: white;
+}
+
+.submenu{
+align: left;
+font: 12px Roboto;
+font-family: Roboto, Tahoma, Arial;
+color: white;
+}
+
+#playera {
+outline-width: 0;
+background-color: #000000;
+width: 853px;
+height: 480px;
+padding: 0px;
+position: relative;
+font-family: Roboto, Tahoma, Arial;
+font-weight: 400;
+font-style: normal;
+font-size: 13px;
+cursor: default;
+color: white;
+}
+
+#playera a{
+color: white;
+text-decoration: underline;
+outline: none;
+}
+
+#playera a:visited{
+color: white;
+text-decoration: underline;
+outline: none;
+}
+
+#playera a:focus{
+color: white;
+outline: none;
+text-decoration: underline;
+}
+
+#playera a:hover{
+color: white;
+outline: none;
+text-decoration: none;
+}
+
+#playera hr{
+border: 1;
+border-bottom: 0;
+color: white;
+width: 333px;
+}
+
+#playera:full-screen {
+width: 100%;
+height: 100%;
+position: absolute;
+margin: 0px 0px 0px 0px;
+top: 0px;
+left: 0px;
+}
+
+#playera:-webkit-full-screen {
+width: 100%;
+height: 100%;
+position: absolute;
+margin: 0px 0px 0px 0px;
+top: 0px;
+left: 0px;
+}
+
+#playera table {
+display: table;
+border-collapse: separate;
+border-spacing: 2px;
+border-color: grey;
+}
+
+#playera h3 {
+color: #ffffff;
+font: 18px Roboto;
+font-family: Roboto, Tahoma, Arial;
+-webkit-margin-before: 0em;
+-webkit-margin-after: 0em;
+}
+
+.poster {
+display: inline-block;
+vertical-align: middle;
+background-repeat: no-repeat;
+background-position: 50% 50%;
+background-size: contain;
+background-color: #000000;
+cursor: pointer;
+margin: 0;
+padding: 0;
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+height: 100%;
+box-sizing: inherit;
+}
+
+.playerv {
+height: 100%;
+}
+
+.big-play-button {
+display: block;
+position: absolute;
+top: 50%;
+left: 50%;
+cursor: pointer;
+box-sizing: inherit;
+margin: -128px 0px 0px -128px
+}
+
+#volumebutton:hover ~ #volumelayer{
+display: block;
+}
+
+#volumelayer:before {
+display: none;
+}
+
+#upper-panel:hover, #lower-panel:hover{
+-webkit-animation: css-animation1 0s ease-in 1s forwards;
+animation: css-animation1 0s ease-in 1s forwards;
+}
+
+#settings{
+width: auto;
+height: auto;
+padding: 0px;
+margin-top: 0px;
+font-family: Roboto, Tahoma, Arial;
+font-weight: 400;
+font-style: normal;
+font-size: 13px;
+cursor: default;
+color: white;
+}
+
+#volume{
+visibility: hidden;
+}
+
+#button-mute:hover ~ #volume{
+visibility: visible;
+}
+
+#button-volume:hover ~ #volume{
+visibility: visible;
+}
+
+#volume:hover{
+visibility: visible;
+}
+
+#play-button-hover{
+display: none;
+}
+
+#poster:hover #play-button{
+display: none;
+}
+
+#poster:hover #play-button-hover{
+display: block;
+}
+
+#upper-panel, #lower-panel {
+opacity: 1;
+display: inline-block;
+vertical-align: middle;
+width: 100%;
+height: 64px;
+background-color: rgba(0, 0, 0, 0.5); 
+margin: 0;
+padding: 0;
+position: absolute;
+bottom: 0;
+left: 0;
+box-sizing: inherit;
+-webkit-animation: css-animation 500ms ease-in 2s forwards;
+animation: css-animation 500ms ease-in 2s forwards;
+}
+
+#seeking{
+display: none;
+}
+
+#progress-slider:hover ~ #seeking{
+display: block;
+}
+
+#playera input[type=radio]:not(old){
+  width     : 2em;
+  margin    : 0;
+  padding   : 0;
+  font-size : 1em;
+  opacity   : 0;
+  cursor: pointer;
+}
+#playera input[disabled=disabled]:not(old){
+cursor: default;
+}
+#playera input[type=radio]:not(old) + label{
+  display      : inline-block;
+  margin-left  : -2em;
+  line-height  : 1.5em;
+  cursor: pointer;
+}
+#playera input[disabled=disabled]:not(old) + label{
+  color       : rgb(170,170,170);
+cursor: default;
+}
+
+#playera input[type=radio]:not(old) + label > span{
+  display          : inline-block;
+  width            : 16px;
+  height           : 16px;
+  margin           : 4px 8px 4px 4px;
+  border           : 2px solid rgb(255,255,255);
+  border-radius    : 50%;
+  vertical-align   : bottom;
+}
+#playera input[disabled=disabled]:not(old) + label > span{
+ border-color  : rgb(170,170,170);
+}
+#playera input[type=radio]:not(old):checked +  label > span > span{
+  display          : block;
+  width            : 10px;
+  height           : 10px;
+  margin           : 2px;
+  border           : 1px solid rgb(255,255,255);
+  border-radius    : 50%;
+  background       : rgb(255,255,255);
+}

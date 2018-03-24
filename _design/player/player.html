@@ -1,0 +1,87 @@
+<video class="playerv" id="video" preload="metadata" style="width: 100%;">
+   <source src="/_design/player/placeholder.png" type="image/png">
+   <p class="vjs-no-js">
+      Для просмотра видео, пожалуйста, включите JavaScript и убедитесь что ваш браузер актуальной версии и поддерживает HTML5
+   </p>
+</video>
+<div id="loading" style="position: absolute; top: 0; left: 0; background-color: rgba(0, 0, 0, 0.5); width: 100%; height: 100%; vertical-align: middle; display: none;">
+   <table style="width: 100%; height: 100%; margin: auto;" border="0">
+      <tr>
+         <td align="center"> <div id="loading-image" style="width: 128px; height: 128px; background-image: url(/_design/player/loading.png);"></div> </td>
+      </tr>
+   </table>
+</div>
+<div class="panel" id="upper-panel" style="position: absolute; top: 0; left: 0; background-color: rgba(0, 0, 0, 0.5); width: 100%; height: 64px; text-align: center; vertical-align: middle; z-index: 101; animation-play-state: paused;">
+   <div width="854">
+      <div id="numbers"> Загрузка JSON </div>
+      <div id="title"> Если не загружается - <a href="//vk.me/id92569974" target="_blank">сообщи нам об этом</a> </div>
+      <a id="previous"><div style="width: 48px; height: 32px; float: left; margin: 16px; background-image: url(/_design/player/arrow.png);"></div></a>
+      <a id="next"><div style="width: 48px; height: 32px; transform: scaleX(-1); vertical-align: middle; float: right; margin: 16px; background-image: url(/_design/player/arrow.png);"></div></a>
+   </div>
+</div>
+<div id="banned" style="position: absolute; top: 0; left: 0; background-color: rgba(0, 0, 0, 0.5); width: 100%; height: 100%; text-align: center; display: none; z-index: 100;"><div  style="padding: 64px;"> Кажется, твой интернет-провайдер заблокировал веб-сервер, <br> на котором мы храним все эпизоды MLP:FiM <br><br><br> Попробуй <a href="/стафф/видео/MLP-FiM/разблокировка" target="_parent">обойти блокировку</a> <br> или смени провайдера </div></div>
+<div id="settings" style="position: absolute; top: 0; left: 0; background-color: rgba(0, 0, 0, 0.5); width: 100%; height: 100%; display: none; z-index: 102;">
+   <table style="position: absolute; bottom: 0; right: 0; padding: 64px" border="0">
+      <tbody>
+         <tr>
+            <td class="menu" width="400" height="246" valign="top">
+               &nbsp; &nbsp; &nbsp;ОЗВУЧКА
+	       <div id="publesher-raduo-groop">
+	       </div>
+            </td>
+            <td class="menu" width="400" height="246" valign="top">
+               &nbsp; &nbsp; &nbsp;КАЧЕСТВО 
+	       <div id="quality-raduo-groop">
+               </div>
+               </td>
+         </tr>
+         <tr>
+            <td class="submenu" width="400" height="96" valign="bottom">
+		<img src="/_design/player/logo.svg" style="padding: 16px; width: 64px; height: 64px;" align="left" border="0">
+		<br>
+               &copy; ТО "МАГИЯ ДРУЖБЫ" <br>
+               &beta;-версия 20170914.15 <br>
+               Программист: <a href="//vk.com/id141148522" target="_blank">Никита Удалов</a> <br>
+               Дизайнер: <a href="//vk.com/id92569974" target="_blank">Руслан Насретдинов</a> <br>
+            </td>
+            <td width="400" height="96" align="center">
+               <h3>
+                  <div id="settings-close" style="width: 256px; height: 64px; cursor: pointer; border: 2px solid #ffffff; border-radius: 8px; text-align: center; line-height: 64px; font-size: 1.8em;"> ПРОДОЛЖИТЬ </div>
+               </h3>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+<div class="panel" id="lower-panel" style="position: absolute; bottom: 0; left: 0; background-color: rgba(0, 0, 0, 0.5); width: 100%; height: 64px; text-align: center; vertical-align: middle; z-index: 101; animation-play-state: paused;">
+   <div id="button-play" style="background-image: url(/_design/player/play.png); width: 32px; height: 32px; margin: 16px 0px 0px 16px; cursor: pointer; display: block;" align="left" border="0" title="Включай!"></div>
+   <div id="button-pause" style="background-image: url(/_design/player/pause.png); width: 32px; height: 32px; margin: 16px 0px 0px 16px; cursor: pointer; display: none;" align="left" border="0" title="Приостановить"></div>
+   <div id="button-fullscreen" style="background-image: url(/_design/player/fullscreen.png); width: 32px; height: 32px; position: absolute; bottom: 16px; right: 16px; cursor: pointer; display: block;" align="right" border="0" title="Полноэкранный режим"></div>
+   <div id="button-volume" style="background-image: url(/_design/player/volume.png); width: 32px; height: 32px; position: absolute; bottom: 16px; right: 64px; cursor: pointer; display: block;" align="right" border="0" title="Громкость"></div>
+   <div id="button-mute" style="background-image: url(/_design/player/mute.png); width: 32px; height: 32px; position: absolute; bottom: 16px; right: 64px; cursor: pointer; display: none;" align="right" border="0" title="Включить звук"></div>
+   <div id="button-gear" style="background-image: url(/_design/player/gear.png); width: 32px; height: 32px; position: absolute; bottom: 16px; right: 112px; cursor: pointer; display: block;" align="right" border="0" title="Выбор озвучки и качества"></div>
+   <div id="progressbar" style="position: absolute; z-index: 1; left: 64px; bottom: 24px; right: 160px;">
+      <div id="timecode" style="position: absolute; bottom: 8px; z-index: 2;"> Буферизация... </div>
+      <div id="remaining" style="position: absolute; right: 0px; bottom: 8px; z-index: 2;"> Буферизация... </div>
+      <div id="progress-bg" style="background-color: #333333; position: absolute; z-index: 3; height: 6px; cursor: pointer; width: 100%;"></div>
+      <div id="progress-load" style="background-color: #aaaaaa; position: absolute; z-index: 4; height: 6px; cursor: pointer; width: 0%;"></div>
+      <div id="progress" style="background-color: white; position: absolute; z-index: 5; height: 6px; cursor: pointer; width: 0%;"></div>
+      <div id="progress-slider" style=" position: absolute; z-index: 6; height: 24px; bottom: -15px; cursor: pointer; width: 100%;"></div>
+      <div id="seeking" style="position: absolute;  width: 36px; height: 16px; margin-left: -18px; bottom: 8px; z-index: 2;background-color: rgba(30, 30, 30, 0.7);">
+	<div id="seektime" style="z-index: 3;">00:00</div>
+      </div>
+   </div>
+   <div id="volume" style="position: absolute; bottom: 48px; right: 56px; width: 48px; height: 144px;">
+      <div id="volumebg" style="background-color: rgba(0, 0, 0, 0.5); width: 100%; height: 128px; top:0px; z-index: 10;"> </div>
+      <div id="volumehelp" style="position: relative; background-color: rgba(0, 0, 0, 0.5); width: 100%; height: -16px;  z-index: 11;"> </div>
+      <div id="volumelayer" style="position: absolute; z-index: 12; bottom: 28px; right: 21px; width: 6px; height: 100px;">
+      <div id="volumebar" style="background-color: #aaaaaa; position: absolute; z-index: 13; width: 6px; height: 100%"></div>
+      <div id="volumewhite" style="background-color: white; position: absolute; z-index: 14; width: 6px; height: 100%; bottom: 0px;"></div>
+      <div id="volume-slider" style="position: absolute; z-index: 15; width: 48px; right: -21px; height: 100%"></div>
+      </div>
+   </div>
+</div>
+<div class="poster" id="poster" style="z-index: 20;">
+<div class="big-play-button" id="play-button" style="z-index: 21; width: 256px; height: 256px; background-image: url(/_design/player/start.png);" type="button"></div>
+<div class="big-play-button" id="play-button-hover" style="z-index: 22; width: 256px; height: 256px; background-image: url(/_design/player/start-hover.png);" type="button"></div>
+</div>

@@ -1,0 +1,64 @@
+{
+    "options": {
+        "next": "../эпизод2",
+        "previous": "ыть",
+        "numbers": "Сезон 1, Эпизод 1 (1)",
+        "title": "Friendship is Magic, part 1 (Магия Дружбы)",
+        "poster": "index.jpg"
+    },
+    "publisher": [
+        {
+            "0": "has.m3u8",
+            "144": "http://188.65.126.42/sec(a950c186a1509198f0b57f1529f3a25a)/video/965/939/363939569_mp4_h264_aac_l2.m3u8",
+            "720": "http://188.65.126.42/sec(07b2fd805b9f5368d340b33535359965)/video/965/939/363939569_mp4_h264_aac_hd.m3u8",
+            "name": "Субтитры (Anon2Anon)",
+            "380": "http://188.65.126.42/sec(cbd09cd5125bc122921f0db351ab8112)/video/965/939/363939569_mp4_h264_aac.m3u8",
+            "480": "http://188.65.126.42/sec(4ae77527d57521dc8ac5ad11c30f7049)/video/965/939/363939569_mp4_h264_aac_hq.m3u8",
+            "240": "http://188.65.126.42/sec(4de6f8808b4c91c9a0f374c87e79220c)/video/965/939/363939569_mp4_h264_aac_ld.m3u8"
+        },
+        {
+            "0": "red.m3u8",
+            "1080": "http://188.65.126.42/sec(1890cf159db4c3febbcf8c885c9b005e)/video/647/461/355164746_mp4_h264_aac_fhd.m3u8",
+            "144": "http://188.65.126.42/sec(ecb1019b9e6e2d975841173da27b4e20)/video/647/461/355164746_mp4_h264_aac_l2.m3u8",
+            "720": "http://188.65.126.42/sec(09b4dd00288755dad0fc457f76f104d9)/video/647/461/355164746_mp4_h264_aac_hd.m3u8",
+            "name": "Карусель (ReDub)",
+            "380": "http://188.65.126.42/sec(37075773d1e0224a057c136c2a77aef7)/video/647/461/355164746_mp4_h264_aac.m3u8",
+            "480": "http://188.65.126.42/sec(1bd2f1df788e489bb0cfb1781d07b73c)/video/647/461/355164746_mp4_h264_aac_hq.m3u8",
+            "240": "http://188.65.126.42/sec(409735620220cac5ab50da0440ce9a2b)/video/647/461/355164746_mp4_h264_aac_ld.m3u8"
+        },
+        {
+            "0": "gal.m3u8",
+            "1080": "http://188.65.126.42/sec(56869bc90e1eb2f77ea63b16fe40b18b)/video/598/517/367715895_mp4_h264_aac_fhd.m3u8",
+            "144": "http://188.65.126.42/sec(93d85a7fe0aeb2d8381196d78a58e82b)/video/598/517/367715895_mp4_h264_aac_l2.m3u8",
+            "720": "http://188.65.126.42/sec(84166b2db6723262c1ca504bccf6ab30)/video/598/517/367715895_mp4_h264_aac_hd.m3u8",
+            "name": "Gala Voices",
+            "380": "http://188.65.126.42/sec(9cab955d139da52a1cb304643c04178c)/video/598/517/367715895_mp4_h264_aac.m3u8",
+            "480": "http://188.65.126.42/sec(212b6c7fbdefd2499df2be3a39bd399b)/video/598/517/367715895_mp4_h264_aac_hq.m3u8",
+            "240": "http://188.65.126.42/sec(1d39cb8a9b2098a8032978779246a724)/video/598/517/367715895_mp4_h264_aac_ld.m3u8"
+        },
+        {
+            "0": "md2/lol.m3u8",
+            "1080": "http://188.65.126.42/sec(x1e7525b54bab12e62e394645a55abe0)/video/857/620/383026758_mp4_h264_aac_fhd.m3u8",
+            "144": "http://188.65.126.42/sec(x6ba3b7d3a609b03958649005a55abe0)/video/857/620/383026758_mp4_h264_aac_l2.m3u8",
+            "720": "http://188.65.126.42/sec(x06c5c2b395e1bed5eb578995a55abe0)/video/857/620/383026758_mp4_h264_aac_hd.m3u8",
+            "name": "mlp the movie#t1",
+            "380": "http://188.65.126.42/sec(x6a1eb8de20dfed0881792f85a55abe0)/video/857/620/383026758_mp4_h264_aac.m3u8",
+            "480": "http://188.65.126.42/sec(xce56fb0e63e57328bf2f1695a55abe0)/video/857/620/383026758_mp4_h264_aac_hq.m3u8",
+            "240": "http://188.65.126.42/sec(xff87f0afdd936b75604c5085a55abe0)/video/857/620/383026758_mp4_h264_aac_ld.m3u8"
+        },
+        {
+            "0": "md/lol.m3u8",
+            "1080": "md/mp4_h264_aac_fhd.m3u8",
+            "144": "md/mp4_h264_aac_l2.m3u8",
+            "720": "md/mp4_h264_aac_hd.m3u8",
+            "name": "mlp the movie",
+            "380": "md/mp4_h264_aac.m3u8",
+            "480": "md/mp4_h264_aac_hq.m3u8",
+            "240": "md/mp4_h264_aac_ld.m3u8"
+        }
+    ],
+    "best": {
+        "publisher": 4,
+        "quality": "1080"
+    }
+}

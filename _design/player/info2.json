@@ -1,0 +1,31 @@
+﻿{
+   "publisher": [
+       {
+     "name": "Оригинал",
+     "0": "masonrl90.m3u8"
+     },
+	{
+     "name": "мэл",
+     "0": "melharucos.m3u8"
+     },
+	
+	{
+     "name": "Эл",
+     "0": "eligorko.m3u8"
+     }
+     ],
+   
+   "options": {
+    "live": true,
+    "next": "/lolkek",
+    "previous": "ыть",
+    "maxquality": "1080",
+    "numbers": "Сезон 1, Эпизод 9",
+    "title": "Bridle Gossip (У страха глаза велики)",
+    "poster": "http://магиядружбы.рф/стафф/видео/MLP-FiM/сезон1/эпизод9/index.jpg"
+	},
+   "best": {
+     "publisher":1,
+     "quality":"0"
+     }
+}
